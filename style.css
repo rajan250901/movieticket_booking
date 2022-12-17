@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(58, 56, 56);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px; 
+}
+
+.showdetails li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showdetails{
+    background-color: rgb(39, 37, 37);
+    padding:5px 30px;
+    border-radius: 5 px;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+}
+#pick{
+    color: rgb(17, 16, 16);  
+    background-color: white;
+}
+
+.show{
+    display:inline-block;
+    text-align: center;
+    justify-content: center;
+    height: 70px;
+    padding: 30px 20px;
+    margin: 25px 0px;
+    width: 300px;
+    background-color: beige;
+}
+
+ .seats{
+    width: 0.5px;
+    padding: 6px;
+    margin-right: 7px;
+    height: 1px;
+    background-color: rgb(122, 113, 113);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-bottom: 6px;
+    display: inline-flex;
+    text-align: center;
+}
+
+.seats.selected{
+    background-color:rgb(86, 218, 241);
+}
+
+.seats.occupied{
+    background-color:white;
+}
+option{
+    background-color: white;
+    color:black;
+    border-radius: 5 px;
+    padding: 5px 10px;
+    
+}
+
+select{
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.seats:not(.occupied):hover{  /*not use hover in occupied class*/
+    cursor:pointer; 
+    transform: scale(1.2); /*use to apply 2d or 3d transformation of an element*/  
+}
+
+.seats:nth-of-type(6){  /*divide sets with 6 seats in the left*/
+    margin-right:22px;
+}
+
+p span{
+    color:aquamarine;
+}
+
+.showdetails .seats:not(.occupied){
+    cursor: default;
+    transform: scale(1);
+}
